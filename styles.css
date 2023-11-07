@@ -1,0 +1,67 @@
+/* Add any base styles or resets you typically use */
+
+/* Navigation styles */
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+/* Hero styles */
+header .hero {
+    background-image: url('./images/pic_1.jpg'); /* Update this with your path */
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding: 50px 20px; /* Adjust padding as needed */
+    position: relative;
+}
+
+header .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+}
+
+header .hero h1,
+header .hero p,
+header .hero button {
+    position: relative;
+    z-index: 1;
+}
+
+header .hero h1 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+header .hero p {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+header .hero button {
+    padding: 10px 30px;
+    background-color: purple; /* Use the color that fits your design */
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    /* Adjust styles for mobile */
+}
+
+header .hero h1 {
+    font-size: 2em; /* smaller font-size for smaller screens */
+}
+header .hero button {
+    padding: 8px 20px; /* smaller padding for smaller screens */
+}
+
+/* Add any other styles you need here */
