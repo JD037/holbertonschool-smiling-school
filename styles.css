@@ -217,3 +217,108 @@ body, html {
   .carousel-item .d-flex {
     gap: 20px; /* You can use gap to create space between items in a flex container */
   }
+
+  /* ---- Popular videos Section ---- */
+
+  img.circle-thumb {
+    width: 150px;
+    height: 150px;
+  }
+
+  img.logo {
+    height: 30px;
+  }
+
+  img.star {
+    height: 15px;
+    width: 15px;
+  }
+
+  img.circle-thumb-small {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Video Card Styles */
+  .video-card {
+    background-color: #f8f8f8; /* Light grey background */
+    border-radius: 10px; /* Rounded corners for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    position: relative; /* Establish a positioning context */
+    overflow: hidden; /* Ensures no content will spill out */
+  }
+
+  .video-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+  }
+
+  .video-card img {
+    width: 100%; /* Ensure image covers the card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px 10px 0 0; /* Only round the top corners */
+  }
+
+  .video-card .play-button {
+    position: absolute; /* Position play button absolutely within the card */
+    top: 50%; /* Align to the middle vertically */
+    left: 50%; /* Align to the middle horizontally */
+    transform: translate(-50%, -50%); /* Center the button exactly */
+    width: 64px; /* Set the width of the button */
+    height: 64px; /* Set the height of the button */
+    background: url('./images/play-button.png') no-repeat center center; /* Add play button image */
+    background-size: contain; /* Make sure the image is contained within the element */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+
+  .video-card .info {
+    padding: 1rem; /* Add padding inside the card */
+  }
+
+  .video-card .info h4 {
+    margin-top: 0; /* Remove top margin from the title */
+  }
+
+  .video-card .info .author,
+  .video-card .info .duration {
+    color: #666; /* Grey color for the text */
+    font-size: 0.9rem; /* Small font size for the text */
+  }
+
+  .images-reviews {
+    position: relative; /* This will serve as the anchor point for the absolute positioning below */
+  }
+  
+  .card-img-top {
+    width: 100%; /* Ensures the image stretches to cover the container */
+    display: block; /* Remove inline characteristics to fill the width of its parent */
+    border-radius: 10px; /* Optional: if you want rounded corners on the image */
+  }
+  
+  .play-button {
+    position: absolute; /* Position the play button over the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset the button by half its size to truly center it */
+    width: 64px; /* Set the width of the button */
+    height: 64px; /* Set the height of the button */
+    background: url('./images/play.png') no-repeat center center; /* Play button image */
+    background-size: contain; /* Ensures the image fits within the button */
+    cursor: pointer; /* Change the cursor to indicate the button is clickable */
+    /* Add any additional styling you want for the play button here */
+  }
+  
+
+
+  .carousel-control-next .carousel-control-next-icon,
+  .carousel-control-prev .carousel-control-prev-icon {
+    width: 30px; 
+    height: 30px;
+    color: black;
+    background-color: #C271FF;
+    border-radius: 20%;
+    top: 10%;
+    transform: translateY(-62%);
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
