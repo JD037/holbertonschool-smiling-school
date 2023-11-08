@@ -418,14 +418,71 @@ body, html {
   /* Pricing styles */
 
   /* Header */
-  .pricing-header {
-    background: url('./images/pic_2.jpg') no-repeat center center;
+  .pricing {
+    background-image: url("images/pic_2.jpg")!important;
+    background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    color: white;
-    min-height: 60vh;
-    background-attachment: scroll;
     background-position: center;
   }
+
+  .logoP {
+    width: auto;
+    height: 50px;
+  }
+
+  /* Pricing Section */
+  .pricing-section {
+    background-color: #f8f9fa;
+    color: #333;
+  }
+
+  .pricing-card .card {
+    margin: 0 auto; /* Center card */
+    border: none;
+  }
+
+  .pricing-card .card-header {
+    background-color: #eaecef;
+    border-bottom: none;
+    color: #333;
+  }
+
+  .pricing-card .price {
+    color: #007bff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .pricing-card .price-big {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .pricing-card ul {
+    text-align: left;
+  }
+
+  .pricing-card button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+  }
+
+  /* Responsive Grid Adjustments */
+  @media (max-width: 767px) {
+    .pricing-card .card {
+      width: auto;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .pricing-card .card {
+      width: 100%; /* Full width on medium devices and up */
+    }
+  }
+
 
 
