@@ -337,3 +337,83 @@ body, html {
     border-color: #C271FF; /* Your desired color */
   }
 
+  /* Footer Styles */
+  .footer {
+    background-color: #1C2331; /* dark background */
+    color: white;
+    padding: 20px 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1140px; /* max width similar to Bootstrap's container */
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-logo img {
+    margin-right: 10px;
+  }
+
+  .footer-social {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-social .social-link {
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    font-size: 24px; /* adjust size as necessary */
+  }
+
+  .footer-social .social-link:hover {
+    opacity: 0.8;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .footer-bottom p {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .footer-logo, .footer-social {
+      margin-bottom: 10px;
+    }
+  }
+
+  .footer-social .social-link {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px; /* Adjust spacing as needed */
+    font-size: 24px; /* Icon size */
+  }
+  
+  .footer-social .social-link:hover {
+    opacity: 0.8;
+  }
+
+  .social > svg {
+    fill: white;
+  }
+  
+
+
