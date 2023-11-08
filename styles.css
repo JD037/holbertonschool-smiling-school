@@ -201,3 +201,19 @@ body, html {
   .carousel-control-prev, .carousel-control-next {
     filter: invert(100%); /* Make the arrows white */
   } 
+
+  /* Carousel Image Styles */
+  .carousel-item .rounded-circle {
+    object-fit: cover; /* This will cover the area without stretching the image */
+  }
+
+  /* Centering the blockquote in the carousel */
+  .carousel-item blockquote {
+    max-width: 600px; /* Set a max-width for the text */
+    margin: auto; /* Auto margins will center the blockquote */
+  }
+
+  /* Adjusting the spacing around the image and blockquote */
+  .carousel-item .d-flex {
+    gap: 20px; /* You can use gap to create space between items in a flex container */
+  }
