@@ -81,12 +81,13 @@ body, html {
     margin-bottom: 1rem;
   }
 
-  .hero-content .btn-lg {
-    padding: 0.75rem 1.25rem; /* Adjust padding as needed */
-    border-radius: 30px; /* Rounded edges for the button */
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    background-color: #C271FF;
+  .hero-content .btn-lg, .membership-section .btn-lg {
+    padding: 0.75rem 1.25rem; /* Match header button padding */
+    border-radius: 30px; /* Match header button border radius */
+    font-weight: bold; /* Match header button font weight */
+    color: #fff; /* Match header button text color */
+    background-color: #C271FF; /* Match header button background color */
+    /* Include any other styles that the header button has */
   }
 
   /* New style for highlighting the word 'Learn' */
@@ -131,8 +132,8 @@ body, html {
     }
   }
 
-/* Styles for mobile screens */
-@media screen and (max-width: 768px) {
+  /* Styles for mobile screens */
+  @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column; /* Stack elements vertically */
     width: 100%; /* Ensures navbar takes the full width */
@@ -322,3 +323,17 @@ body, html {
     margin-right: 5rem;
     margin-left: 5rem;
   }
+
+  /* ---- Free membership Section ---- */
+
+
+  .bg-sectionfree {
+    background-color: #071629;    
+  }
+
+  .btn-custom {
+    color: #fff; /* White text */
+    background-color: #C271FF; /* Your desired color */
+    border-color: #C271FF; /* Your desired color */
+  }
+
