@@ -480,8 +480,38 @@ body, html {
 
   @media (min-width: 768px) {
     .pricing-card .card {
-      width: 100%; /* Full width on medium devices and up */
+      width: 100%;
     }
+  }
+
+  /* FAQ Section Styles */
+  .faq-section {
+    background-color: #fff; /* or any color that matches your design */
+    padding: 2rem 0;
+  }
+
+  .faq-section h2 {
+    font-size: 2.5rem; /* Adjust the size as needed */
+    color: #333; /* Title color */
+    margin-bottom: 1.5rem;
+  }
+
+  .faq {
+    background: #f8f9fa; /* FAQ item background color */
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .faq h4 {
+    font-size: 1.25rem; /* Adjust the size as needed */
+    color: #333; /* Question color */
+    margin-bottom: 0.5rem;
+  }
+
+  .faq p {
+    font-size: 1rem; /* Adjust the size as needed */
+    color: #666; /* Answer color */
   }
 
 
