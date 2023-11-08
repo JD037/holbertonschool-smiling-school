@@ -11,6 +11,7 @@ body, html {
     position: relative;
     color: white;
     min-height: 60vh;
+    background-attachment: scroll;
 }
   
   /* Navbar Styles */
@@ -67,6 +68,7 @@ body, html {
   .hero-content {
     padding: 10vh 0; /* Adjust padding to suit your layout */
     text-align: center;
+    margin-bottom: 0;
   }
 
   .hero-content h1 {
