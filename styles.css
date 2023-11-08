@@ -10,6 +10,7 @@ body, html {
     background-size: cover;
     position: relative;
     color: white;
+    min-height: 60vh;
 }
   
   /* Navbar Styles */
@@ -17,6 +18,9 @@ body, html {
     background-color: transparent !important; /* Ensure navbar is transparent */
     padding: 1rem 2rem; /* Adjust padding as needed */
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
   .navbar .navbar-brand {
@@ -35,33 +39,61 @@ body, html {
   .navbar .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
+
+  /* Custom Logo Sizes */
+  .logo-smile {
+    max-width: 50px; /* Adjust size as necessary */
+    height: auto; /* Keeps the aspect ratio */
+  }
+
+  .logo-text {
+    max-width: 150px; /* Adjust size as necessary */
+    height: auto; /* Keeps the aspect ratio */
+  }
+
+  /* Keep logos aligned and centered vertically */
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Add some spacing between the logos if necessary */
+  .logo-smile {
+    margin-right: 10px; /* Adjust spacing as necessary */
+  }
+
   
   /* Hero Content */
   .hero-content {
     padding: 10vh 0; /* Adjust padding to suit your layout */
     text-align: center;
   }
-  
+
   .hero-content h1 {
     font-size: 3rem; /* Adjust font size as needed */
     margin-bottom: 0.5rem;
   }
-  
+
   .hero-content .tagline {
     font-size: 1.5rem; /* Adjust font size as needed */
     margin-bottom: 1rem;
   }
-  
+
   .hero-content .btn-lg {
     padding: 0.75rem 1.25rem; /* Adjust padding as needed */
     border-radius: 30px; /* Rounded edges for the button */
     font-weight: bold;
-    color: purple;
+    color: rgb(255, 255, 255);
+    background-color: #C271FF;
   }
-  
-  /* Awards Section Styles */
-.award-section {
-    margin-top: -100px; /* Adjust negative margin to pull the section upwards */
+
+  /* New style for highlighting the word 'Learn' */
+  .highlight {
+    color: #C271FF; /* Custom color for the word 'Learn' */
+  }
+    /* Awards Section Styles */
+  .award-section {
+      margin-top: -100px; /* Adjust negative margin to pull the section upwards */
   }
   
   /* Award Profile Styles */
@@ -92,11 +124,73 @@ body, html {
         background-attachment: scroll; /* Change background attachment for mobile */
     }
     .hero-content {
-        padding: 20vh 0; /* Increase padding for smaller devices */
+        min-height: 30vh;
+        padding: 20vh 0;
+    }
+  }
+
+/* Styles for mobile screens */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack elements vertically */
+    width: 100%; /* Ensures navbar takes the full width */
+    padding-left: 0; /* Removes padding from the left */
+    padding-right: 0; /* Removes padding from the right */
+  }
+
+  .navbar .navbar-toggler {
+    position: absolute; /* Positions the hamburger menu absolutely */
+    top: 0; /* At the top of the navbar */
+    left: 0; /* At the left of the navbar */
+    padding-left: 1rem; /* Adds some space from the left edge */
+  }
+
+  .navbar-brand {
+    width: 100%;
+    justify-content: center;
+    order: 1;
+    margin-top: 1rem; /* Adjust if more space is needed */
+  }
+
+  .logo-smile {
+    position: absolute;
+    top: -45px; /* Adjust this value to move the image up or down */
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 80px; /* Reduce the size if it's too large */
+    z-index: 10; /* Make sure it's above the text */
+  }
+  
+  .logo-text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Additional adjustment to hero container for mobile */
+  .hero-container {
+    min-height: auto; /* Adjust based on your design */
+    padding: 4rem 0; /* Give some space at the top and bottom */
+  }
+  
+  /* Since we've added flex-start to the hamburger, let's make sure the logo is centered */
+  .navbar-brand {
+    width: 100%; /* Take full width to allow centering */
+    justify-content: center; /* Center the logo */
+    margin-top: 0rem; /* Provide some spacing from the hamburger menu */
+  }
+
+    .hamburger-menu {
+      align-self: flex-start; /* Align hamburger to the start (left) */
     }
   }
 
   /* Carousel of Quotes */
+  .carousel {
+    background-color: #C271FF; /* Set the background color */
+  }
   .carousel-item {
     margin: 2rem auto;
     max-width: 80%;
