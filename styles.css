@@ -514,5 +514,31 @@ body, html {
     color: #666; /* Answer color */
   }
 
+  /* Courses Styling */
+
+  body.courses-page {
+    background-image: url("images/pic_3.jpg")!important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 85vh;
+  }
+
+  .courseSection {
+    background-image: url("images/pic_3.jpg")!important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  .courseFont {
+    font-size: 32px;
+    font-family: 'Coiny'!important;
+    font-weight: 400;
+}
+
+.courseFont .text-violet {
+  color: #C271FF; /* This ensures that 'text-violet' has a higher specificity than 'courseFont' */
+}
+
 
 
