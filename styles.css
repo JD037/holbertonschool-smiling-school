@@ -528,17 +528,40 @@ body, html {
     background-image: url("images/pic_3.jpg")!important;
     background-repeat: no-repeat;
     background-size: cover;
-}
+  }
 
   .courseFont {
     font-size: 32px;
     font-family: 'Coiny'!important;
     font-weight: 400;
-}
+  }
 
-.courseFont .text-violet {
-  color: #C271FF; /* This ensures that 'text-violet' has a higher specificity than 'courseFont' */
-}
+  .courseFont .text-violet {
+    color: #C271FF; /* This ensures that 'text-violet' has a higher specificity than 'courseFont' */
+  }
 
+  .search-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .search-filter {
+      background-color: #c682fa !important;
+      border-radius: 3px;
+  }
+
+  .search-filter input {
+      background-color: #c682fa;
+  }
+
+  .form-control
+  ::placeholder {
+    color: white; 
+  }
+
+  #search-section {
+    background-color: #C271FF !important;
+  }
+  
 
 
